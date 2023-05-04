@@ -13,3 +13,8 @@ function subtract (x, y) {
 
 let subtractResult = subtract(x, y);
 
+function divide (x, y) {
+    return (x / y);
+}
+
+let divideResult = divide(x, y);
