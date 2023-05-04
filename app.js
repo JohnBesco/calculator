@@ -18,3 +18,9 @@ function divide (x, y) {
 }
 
 let divideResult = divide(x, y);
+
+function multiply (x, y) {
+    return (x * y);
+}
+
+let multiplyResult = multiply(x, y);
