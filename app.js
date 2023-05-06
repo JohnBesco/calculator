@@ -1,26 +1,44 @@
-let x = '20'
-let y = '2'
+let num1 = '123';
+let num2 = '2';
+let operator = '-';
 
-function sumOf (x, y) {
-    return (x + y);
+function sumOf (num1, num2) {
+    return (num1 + num2);
 }
 
-let sumResult = sumOf(x, y);
+let sumResult = sumOf(num1, num2);
 
-function subtract (x, y) {
-    return (x - y);
+function subtract (num1, num2) {
+    return (num1 - num2);
 }
 
-let subtractResult = subtract(x, y);
+let subtractResult = subtract(num1, num2);
 
-function divide (x, y) {
-    return (x / y);
+function divide (num1, num2) {
+    return (num1 / num2);
 }
 
-let divideResult = divide(x, y);
+let divideResult = divide(num1, num2);
 
-function multiply (x, y) {
-    return (x * y);
+function multiply (num1, num2) {
+    return (num1 * num2);
 }
 
-let multiplyResult = multiply(x, y);
+let multiplyResult = multiply(num1, num2);
+
+let operate = function(operator, num1, num2) {
+    if (operator == '+') {
+        return num1 + num2;
+    } else if (operator == '-') {
+        return num1 - num2;
+    } else if (operator == '/') {
+        return num1 / num2;
+    } else if (operator == '*') {
+        return num1 * num2;
+    }
+} 
+
+console.log(operate(operator, num1, num2));
+
+
+
