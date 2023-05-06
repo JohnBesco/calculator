@@ -72,10 +72,7 @@ body {
 }
 
 #edit-display-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    display: grid;
 }
 
 .edit-btn {
@@ -91,3 +88,4 @@ body {
     font-weight: 400;
     font-size: 30px;
 }
+
