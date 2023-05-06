@@ -15,7 +15,6 @@ body {
 }
 
 #calculator-body {
-    border: solid 2px black;
     background-color: #2F302A;
     width: 550px;
     height: 650px;
@@ -71,21 +70,48 @@ body {
                 inset -32px -32px 64px #b6ad84;
 }
 
-#edit-display-wrapper {
-    display: grid;
-}
-
 .edit-btn {
     background-color: #262721;
     border-radius: 5px;
     box-shadow: inset 32px 32px 64px #23241e,
                 inset -32px -32px 64px #292a24;
-    width: 248px;
+    width: 240px;
     height: 80px;
-    margin-top: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #E0E0DD;
     font-weight: 400;
     font-size: 30px;
+}
+
+#clear-btn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 0px;
+}
+
+#delete-btn {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border: 0px;
+}
+
+#numpad-grid {
+    margin: 10px auto;
+    display: grid;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 80px 80px 80px;
+    width: 500px;
+    height: 430px;
+    gap: 10px   ;
+}
+
+.numpad {
+    border: 0px;
+    border-radius: 5px;
+    width: 105px;
+    height: 80px;
 }
 
