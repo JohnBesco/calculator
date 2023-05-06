@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #FFFFFE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#calculator-body {
+    border: solid 2px black;
+    width: 550px;
+    height: 650px;
+}
+
+#above-display {
+    display: flex;
+    margin: 1em auto;
+    border: solid 1px black;
+    width: 500px;
+    height: 50px;
+}
+
+.detail-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: inherit;
+}
+
+#branding {
+    flex-grow: 1;
+}
+
+#solar-detail {
+    flex-grow: 2;
+}
+
+#detail {
+    flex-grow: 1;
+}
