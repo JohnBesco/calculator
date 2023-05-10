@@ -4,6 +4,8 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -84,14 +86,14 @@ body {
 }
 
 #clear-btn {
+    border: 0px;
     grid-column-start: 1;
     grid-column-end: 2;
-    border: 0px;
 }
 
 #delete-btn {
     grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-end: 5;
     border: 0px;
 }
 
@@ -102,10 +104,10 @@ body {
     justify-content: space-between;
     align-items: center;
     grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px 80px;
     width: 500px;
     height: 430px;
-    gap: 10px   ;
+    gap: 10px;
 }
 
 .numpad {
@@ -113,5 +115,7 @@ body {
     border-radius: 5px;
     width: 105px;
     height: 80px;
+    padding: 20px;
 }
+
 
