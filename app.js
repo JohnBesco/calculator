@@ -38,7 +38,17 @@ let operate = function(operator, num1, num2) {
     }
 } 
 
-console.log(operate(operator, num1, num2));
+
+
+const display = document.querySelector('#main-display');
+const paragraph = document.createElement('p');
+const btn = document.querySelectorAll('.numpad');
+
+btn.forEach(button => {
+    button.addEventListener('click', () => {
+      alert(button.id);
+    });
+  });
 
 
 
