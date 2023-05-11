@@ -46,7 +46,7 @@ const btn = document.querySelectorAll('.numpad');
 
 btn.forEach(button => {
     button.addEventListener('click', () => {
-      alert(button.id);
+        display.textContent += button.textContent + " ";
     });
   });
 
