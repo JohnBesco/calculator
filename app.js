@@ -48,7 +48,5 @@ btn.forEach(button => {
     button.addEventListener('click', () => {
         display.textContent += button.textContent + " ";
     });
-  });
-
-
+});
 
