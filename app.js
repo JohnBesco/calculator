@@ -42,18 +42,32 @@ let operate = function(operator, num1, num2) {
 const display = document.querySelector('#main-display');
 const paragraph = document.createElement('p');
 const btn = document.querySelectorAll('.numpad');
+const operatorBtn = document.querySelectorAll('.operators');
+const equalBtn = document.querySelector('.equal');
 
-let firstNumber = '';
+let currentNumber = '';
+let storedNumber = '';
+let selectedOperator = '';
 
 btn.forEach(button => {
     button.addEventListener('click', () => {
         const number = button.value;
-        firstNumber += number;
+        currentNumber += number;
         console.log(button.value);
         updateDisplay();
     });
 });
 
+operatorBtn.forEach(operatorButton => {
+    operatorButton.addEventListener('click', () => {
+        selectedOperator = operatorButton.value;
+        storedNumber = currentNumber;
+        currentNumber = '';
+        updateDisplay();
+    });
+});
+
+
 function updateDisplay() {
-    display.textContent = firstNumber;
+    display.textContent = currentNumber;
 }
