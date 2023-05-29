@@ -126,4 +126,11 @@ body {
     padding: 20px;
 }
 
+.equal {
+    border: 0px;
+    border-radius: 5px;
+    width: 105px;
+    height: 80px;
+    padding: 20px;
+}
 

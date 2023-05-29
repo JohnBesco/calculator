@@ -67,6 +67,13 @@ operatorBtn.forEach(operatorButton => {
     });
 });
 
+equalBtn.addEventListener('click', () => {
+    const result = operate(selectedOperator, parseFloat(storedNumber), parseFloat(currentNumber));
+    currentNumber = result.toString();
+    storedNumber = '';
+    selectedOperator = '';
+    updateDisplay();
+});
 
 function updateDisplay() {
     display.textContent = currentNumber;
