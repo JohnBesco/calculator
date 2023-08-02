@@ -1,7 +1,7 @@
 @font-face {
-    font-family: calculator;
+    font-family: Calculator;
     src: url("/fonts/Calculator.ttf");
-  }
+}
 
 html {
     box-sizing: border-box;
@@ -19,6 +19,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 80vh;
+    font-family: Caculator;
+
 }
 
 #calculator-body {
@@ -71,6 +73,7 @@ body {
     background-color: #948D6B;
     color: #000000;
     font-size: 60px;
+    font-family: Caculator;
     border-radius: 5px;
     width: 500px;
     height: 80px;
@@ -123,6 +126,8 @@ body {
     width: 105px;
     height: 80px;
     padding: 20px;
+    font-size: 34px;
+    font-weight: 800;
 }
 
 .operators {
@@ -131,6 +136,8 @@ body {
     width: 105px;
     height: 80px;
     padding: 20px;
+    font-size: 34px;
+    font-weight: 800;
 }
 
 .equal {
@@ -139,5 +146,7 @@ body {
     width: 105px;
     height: 80px;
     padding: 20px;
+    font-size: 34px;
+    font-weight: 800;
 }
 
