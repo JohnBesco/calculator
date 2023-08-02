@@ -99,12 +99,14 @@ body {
     border: 0px;
     grid-column-start: 1;
     grid-column-end: 2;
+    color: rgb(189, 62, 62);
 }
 
 #delete-btn {
     grid-column-start: 3;
     grid-column-end: 5;
     border: 0px;
+    color: rgb(235, 133, 133);
 }
 
 #numpad-grid {
